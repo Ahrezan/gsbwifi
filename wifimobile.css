@@ -1,0 +1,126 @@
+/* Tablet Ekranlar (Maksimum 768px Genişlik) */
+@media (max-width: 768px) {
+    #kg-form {
+        width: 450px; /* Genişlik ekranın %90'ı */
+        height: auto; /* Yükseklik içerik kadar */
+        padding: 20px; /* Daha dar padding */
+        border-radius: 20px; /* Yuvarlaklık azaltıldı */
+    }
+
+    html.kayit-sayfa #kg-form {
+        height: 520px;
+    }
+
+    .kutu-ici {
+        width: 100%; /* Kutuyu tam genişlikte yap */
+        height: auto; /* İçeriğe göre yükseklik */
+    }
+
+    #kyklogo-metin {
+        transform: translateX(8%); /* Ortalamayı düzeltir */
+    }
+
+    #kyklogo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #ust-baslik {
+        font-size: 30px;
+    }
+
+    #alt-baslik {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    input {
+        width: 95%; /* Input genişliğini tam ekran yap */
+        font-size: 16px; /* Yazı boyutunu düşür */
+    }
+
+    input::placeholder {
+        color: #cccccc; /* İstediğiniz rengi buraya yazabilirsiniz */
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%; /* Butonları tam genişlikte yap */
+        margin: 10px 0; /* Aralarında boşluk bırak */
+    }
+
+    .kayit-buton {
+        width: 93%;
+        font-size: 16px; /* Buton yazı boyutunu küçült */
+        padding: 8px 15px; /* Daha az padding */
+    }
+
+    .butonlar {
+        flex-direction: column; /* Butonları alt alta hizala */
+    }
+
+    #alt-bilgilendirme {
+        font-size: 14px; /* Yazı boyutunu küçült */
+        padding: 10px;
+    }
+}
+
+/* Mobil Cihazlar (Maksimum 480px Genişlik) */
+@media (max-width: 480px) {
+    #kg-form {
+        width: 336px; /* Daha dar ekranlar için genişliği %95 yap */
+        padding: 15px; /* Daha az padding */
+    }
+
+    html.kayit-sayfa #kg-form {
+        height: 470px;
+    }
+
+    #kyklogo {
+        width: 40px; /* Logo daha küçük */
+        height: 40px;
+    }
+
+    #kyklogo-metin {
+        transform: translateX(8%); /* Ortalamayı düzeltir */
+    }
+
+    #ust-baslik {
+        font-size: 20px;
+    }
+
+    #alt-baslik {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    input {
+        width: 95%;
+        font-size: 14px; /* Daha küçük yazı boyutu */
+        padding: 8px; /* Daha az padding */
+    }
+
+    button {
+        font-size: 16px; /* Buton yazı boyutunu küçült */
+        padding: 8px 15px; /* Daha az padding */
+    }
+
+    .kayit-buton {
+        width: 91%;
+        font-size: 16px; /* Buton yazı boyutunu küçült */
+        padding: 8px 15px; /* Daha az padding */
+    }
+
+    #alt-bilgilendirme {
+        font-size: 12px; /* Alt bilgilendirme daha küçük */
+    }
+
+    #dil-resim img {
+        width: 20px;
+        height: 20px;
+    }
+}

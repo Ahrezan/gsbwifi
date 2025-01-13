@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Tüm ekran boyutunu kapsar */
+    background: linear-gradient(to right, #fbfbfb, #dddddd);
+    font-family: "Arimo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-size: cover; /* Arka planı tam ekrana yayar */
+    background-attachment: fixed; /* Kaydırma sırasında sabit tutar */
+}
+
+.kutu-ici {
+    width: 400px; /* Kutu genişliği */
+    height: 400px; /* Kutu yüksekliği */
+}
+
+#dil-resim {
+    width: 30px;
+    height: 30px;
+    display: flex; /* Yan yana sıralama */
+}
+
+#dil-resim img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi div'e kırparak sığdırır */
+}
+
+#kg-form {
+    width: 480px;
+    height: 480px;
+    background: linear-gradient(to right, #e1e1e1, #e1e1e1);
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0 auto; /* Kutu ortada kalır */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Tam ortalama */
+}
+
+#ust-baslik {
+    color: #2d3392;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#alt-baslik {
+    color: #454545;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: 2.1px;
+}
+
+html.kayit-sayfa #kg-form {
+    height: 520px;
+}
+
+#kyklogo-metin {
+    padding-left: 1%;
+    gap: 15px; /* Resim ve metinler arasındaki boşluk */
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Yatayda ortala */
+    margin: 0 auto; /* Kutuyu ortala (sayfa içinde) */
+    box-sizing: border-box; /* Padding dahil */
+    text-align: center; /* Metni ortala */
+}
+
+#kyklogo {
+    width: 60x;
+    height: 60px;
+    display: flex;
+}
+
+#logo-metni {
+    flex-direction: column; /* Metinleri alt alta hizalar */
+    gap: 20px; /* Metinler arasındaki boşluk */
+}
+
+#logo-metni p {
+    margin: 0; /* Varsayılan boşlukları kaldırır */
+}
+
+#cizgi {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to bottom, #9d9b9b, #e4e6eb, #e4e6eb);
+    margin: 20px auto; /* Çizgiyi ortala ve yukarı-aşağı boşluk ekle */
+}
+
+form {
+    padding-top: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: block;
+}
+label {
+    font-size: 22px;
+    color: #4a4a4a;
+    font-weight: bold;
+    display: block; /* Etiketlerin alt alta sıralanması için blok düzene sokulur */
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+input {
+    width: 378px;
+    padding-left: 10px;
+    padding: 10px;
+    margin-bottom: 20px; /* Her eleman arasında boşluk bırakmak için */
+    border: 1px solid #4a4a4a;
+    border-radius: 30px;
+    font-size: 17px;
+    text-indent: 12px;
+    background-color: #eeeeee;
+}
+
+input::placeholder {
+    color: #cccccc; /* İstediğiniz rengi buraya yazabilirsiniz */
+    font-size: 20px;
+}
+
+button {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #338ad6, #045ead);
+    cursor: pointer;
+    width: 200px;
+    text-decoration: none;
+    font-size: 18.5px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.butonlar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kayit-buton {
+    background: linear-gradient(to right, #f1f1f1, #d9d9d9);
+    text-align: center;
+    color: #6a6a6a;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+    font-size: 18.5px;
+    font-weight: bold;
+    border: 1px solid #dddddd;
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.kayit-buton:hover {
+    background-color: #0056b3;
+}
+
+#alt-bilgilendirme {
+    position: fixed; /* Her zaman ekranın altında kalır */
+    bottom: 0;
+    font-size: 17px;
+    width: 100%; /* Ekran genişliği boyunca uzar */
+    height: 52px; /* Çubuğun yüksekliği */
+    background: linear-gradient(to top, #e4e4e4, #e4e6eb);
+    color: #6a6a6a; /* Yazı rengi */
+    line-height: 50px; /* Dikeyde yazıyı ortalar */
+    border-top: 1px dashed #333; /* Üstte kesikli çizgi */
+    display: flex; /* Flexbox modunu etkinleştir */
+    align-items: center; /* Dikeyde ortalama */
+    justify-content: space-between; /* Sol, orta ve sağ hizalama */
+    box-sizing: border-box;
+    word-wrap: break-word; /* Uzun metinler taşmasın */
+}
+
+#sol, #orta, #sag {
+    margin: 0; /* Varsayılan boşlukları kaldır */
+}
+
+#orta {
+    position: absolute; /* Tam ortaya sabitlemek için */
+    text-align: center; /* Ortadaki metni ortala */
+    flex: 1; /* Ortadaki metnin boşluğu doldurmasını sağlar */
+    left: 50%; /* Sol kenardan %50 uzaklık */
+    transform: translateX(-50%); /* Ortalamak için */
+}
+
+a {
+    text-decoration: none; /* Altı çizgiyi kaldırır */
+    color: #4a4a4a; /* Linkin varsayılan rengi */
+    
+}

@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fbfbfb, #dddddd);
+    font-family: "Arimo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-size: cover; /* Arka planı tam ekrana yayar */
+    background-attachment: fixed; /* Kaydırma sırasında sabit tutar */
+}
+
+#ogrenci-bilgi {
+    width: 900px;
+    height: 75px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: linear-gradient(to left, #e1e1e1, #d6d5d5);
+    border: 1px solid #cacaca;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+}
+
+#ogrenci-bilgi img {
+    width: auto;
+    height: 63px;
+    margin-left: 7px;
+    object-fit: cover;
+}
+
+#kota {
+    width: 500px;
+    height: 200px;
+    margin-top: 35px;
+    margin-left: 50px;
+    padding: 15px;
+    background: linear-gradient(to left, #e1e1e1, #d6d5d5);
+    border: 1px solid #cacaca;
+    border-radius: 30px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#kota img {
+    width: auto;
+    height: 30px;
+}
+
+#bilgilendirme {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: linear-gradient(to left, #e1e1e1, #d6d5d5);
+    border: 1px solid #cacaca;
+    border-radius: 30px;
+    display: flex;
+}
+
+#bilgilendirme img {
+    width: auto;
+    height: 30px;
+}
+
+#anketler {
+    width: 500px;
+    height: 450px;
+    background: linear-gradient(to left, #e1e1e1, #d6d5d5);
+    border: 1px solid #cacaca;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%; /* Genişlik olarak %50'ye yerleştir */
+    transform: translate(-301px, 50px); /* Tam ortaya hizala */
+}
+
+#anketler img {
+    width: auto;
+    height: 30px;
+}
+
+#duyurular {
+    width: 600px;
+    height: 700px;
+    margin-top: 50px;
+    margin-right: 50px;
+    background: linear-gradient(to right, #e1e1e1, #d6d5d5);
+    border: 1px solid #cacaca;
+    border-radius: 30px;
+    display: flex;
+    position: absolute; /* Diğer elementlerden bağımsız */
+    top: 0;
+    right: 0;
+    float: right;
+}
+
+#duyurular img {
+    width: auto;
+    height: 30px;
+}
+
+#alt-bilgilendirme {
+    position: fixed; /* Her zaman ekranın altında kalır */
+    bottom: 0;
+    font-size: 17px;
+    width: 100%; /* Ekran genişliği boyunca uzar */
+    height: 52px; /* Çubuğun yüksekliği */
+    background: linear-gradient(to top, #e4e4e4, #e4e6eb);
+    color: #6a6a6a; /* Yazı rengi */
+    line-height: 50px; /* Dikeyde yazıyı ortalar */
+    border-top: 1px dashed #333; /* Üstte kesikli çizgi */
+    display: flex; /* Flexbox modunu etkinleştir */
+    align-items: center; /* Dikeyde ortalama */
+    justify-content: space-between; /* Sol, orta ve sağ hizalama */
+    box-sizing: border-box;
+    word-wrap: break-word; /* Uzun metinler taşmasın */
+}
+
+#sol, #orta, #sag {
+    margin: 0; /* Varsayılan boşlukları kaldır */
+}
+
+#orta {
+    position: absolute; /* Tam ortaya sabitlemek için */
+    text-align: center; /* Ortadaki metni ortala */
+    flex: 1; /* Ortadaki metnin boşluğu doldurmasını sağlar */
+    left: 50%; /* Sol kenardan %50 uzaklık */
+    transform: translateX(-50%); /* Ortalamak için */
+}
+
+a {
+    text-decoration: none; /* Altı çizgiyi kaldırır */
+    color: #4a4a4a; /* Linkin varsayılan rengi */
+}
